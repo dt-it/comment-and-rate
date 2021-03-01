@@ -16,6 +16,8 @@ Database connection package. The connection pool is provided in file ```webapp/M
 Classes with the main logic of the application and object mapping (services), data model classes and classes related to database operations(Dao). Each table in the database has a connection with one model class.
 ### Client
 The client part of the application, i.e. enabling reference to business logic classes. This package contains all controllers.
+### Webapp
+Part of the application with the frontend implementation (jsp, jspf, css).
 
 # Quick Start
 
