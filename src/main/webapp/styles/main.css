@@ -1,0 +1,235 @@
+/* pozbywamy się podkreśleń linków */
+a {
+    text-decoration: none;
+}
+
+/* logo po lewej, przycisk logowania po prawej */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+/* kolorowe logo */
+.logo {
+    color: #51d6c4;
+    font-size: 2.5em;
+    font-weight: 800;
+}
+
+/* efekt przycisku logowania */
+.login-button {
+    background-color: #369f90;
+    color: white;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    padding: 3px 16px;
+    line-height: 24px;
+    font-weight: 600;
+    letter-spacing: .1em;
+}
+
+/* po najechaniu na przycisk lekka przezroczystość */
+.login-button:hover {
+    opacity: 80%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-weight: 300;
+    background-color: #4b4b4e;
+}
+
+/*KAFELKI (ASIDE)
+/* usuwam domyślne style przeglądarki i dodaje flexboxa, kafelki mają zajmować tyle samo miejsca */
+.categories > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* dodanie zawijania kafelkow z kategoriami  */
+}
+
+/* kafelki mają wypełniać całą przestrzeń i być lekko przezroczyste */
+.categories > ul > li {
+    flex-grow: 1;
+    padding: 0.5rem;
+    font-weight: 500;
+    border: 2px solid;
+    color: white;
+    opacity: 0.8;
+}
+
+/* po najechaniu na kafelek usuwamy przezroczystość */
+.categories > ul > li:hover {
+    opacity: 1;
+}
+
+/* wyśrodkowanie tekstu na kafelkach i zmiana koloru linków */
+.categories > ul > li > a {
+    color: inherit;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* kolor kafelków */
+.categories > ul > li:nth-child(3n) {
+    background-color: #369f90;
+}
+
+.categories > ul > li:nth-child(3n+1) {
+    background-color: #1f665c;
+}
+
+.categories > ul > li:nth-child(3n+2) {
+    background-color: #0f3e38;
+}
+
+/* ramka i odstępy */
+.discovery {
+    border: 1px solid #BDBDBD;
+    border-radius: 0px;
+    margin-top: 5px;
+    padding: 16px;
+}
+
+.discovery-header,
+.discovery-header:visited {
+    line-height: 75%;
+    color: #51d6c4;
+}
+
+/* zmiana czcionki "Dodane przez..." */
+.discovery-details {
+    color: #bcb7b7;
+    font-size: 0.8rem;
+    line-height: 85%;
+}
+
+/* zmiana koloru odnośnika i zawijanie, gdy zbyt długie */
+.discovery-link,
+.discovery-link:visited {
+    color: #bcb7b7;
+    font-size: 0.8rem;
+    line-height: 85%;
+    font-style: italic;
+    word-wrap: break-word;
+}
+
+.discovery-description {
+    color: white;
+}
+
+/* wyrównanie i większa czcionka */
+.discovery-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+/* zmieniam paragraf na element liniowy */
+.discovery-votes {
+    display: inline;
+    color: #51d6c4;
+}
+
+.discovery-comment {
+    color: #51d6c4;
+}
+
+/* nadpisanie domyślnych marginesów */
+.discovery-bar > p {
+    margin: 0 4px;
+}
+
+/* zmiana koloru przycisków głosowania po najechaniu */
+.upvote:hover {
+    color: #186b60;
+}
+
+.downvote:hover {
+    color: #186b60;
+}
+
+.discovery-like:hover {
+    color: #186b60;
+}
+
+.discovery-comment:hover {
+    color: #186b60;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* przycisk do dodania postów */
+.discovery-add-button {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #51d6c4;
+    color: white;
+    box-shadow: 2px 2px 3px #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discovery-add-button:hover {
+    color: #186b60;
+}
+
+.comments-list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.message-list > li:nth-child(2n+1) {
+    background-color: lightslategrey;
+    margin: 5px 0;
+}
+
+.category-title {
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.category-description {
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.comments-list {
+    margin-top: 10px;
+    color: white;
+}
+
+.register {
+    color: white;
+}
+
+.register{
+    color: white;
+
+}
+
+.register-link,
+.register-link:visited {
+    color: #51d6c4;
+    font-style: italic;
+
+}

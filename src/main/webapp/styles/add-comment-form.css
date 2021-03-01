@@ -1,0 +1,49 @@
+/* Ramka, marginesy, wyśrodkowanie i maksymalna szerokość */
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #BDBDBD;
+    justify-content: center;
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+/* Rozmiar czcionki i marginesy między inputami */
+.comment-form > * {
+    font-size: 1rem;
+    margin: 16px;
+}
+
+.comment-form > textarea {
+    font: 300 1rem 'Arial', sans-serif;
+    height: 5rem;
+    resize: vertical;
+}
+
+/* Obramowanie elementów formularza */
+.comment-form > *:not(.comment-form-title, .comment-form-discovery-title) {
+    padding: 20px;
+    border: 1px solid #BDBDBD;
+}
+
+
+/* Wyśrodkowanie tytułu formularza */
+.comment-form-title {
+    text-align: center;
+    font-size: 2em;
+    color: #51d6c4;
+    margin: 16px auto;
+}
+
+/* Zmiana koloru przycisku */
+.comment-form-button {
+    color: white;
+    background-color: #51d6c4;
+}
+
+.comment-form-discovery-title{
+    text-align: left;
+    font-size: 1em;
+    color: black;
+    margin: 16px auto;
+}
